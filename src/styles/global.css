@@ -1,14 +1,15 @@
 @import "tailwindcss";
+
 @theme{
     --color-primario: #3b463e;
-    --color-primario-light: ##6e712e;
+    --color-primario-light: #6e712e;
     --color-secundario: #d6b997;
     --color-secundario-light: #ccc0b4;
     /* fuentes */
     --font-titulos:'BlairITC', 'sans-serif';
-    --font-subtitulos:'BlairITCMedium', 'san-serif';
-    --font-parrafos:'FuturaBook','san-serif';
-    --font-medioparrafo:'Futura','san-serif';
+    --font-subtitulos:'BlairITCMedium', 'sans-serif';
+    --font-parrafos:'FuturaBook','sans-serif';
+    --font-medioparrafo:'Futura','sans-serif';
 }
 
 .bg-form{
