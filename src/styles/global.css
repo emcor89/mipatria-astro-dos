@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@theme{
+    --color-primario: #3b463e;
+    --color-primario-light: ##6e712e;
+    --color-secundario: #d6b997;
+    --color-secundario-light: #ccc0b4;
+    /* fuentes */
+    --font-titulos:'BlairITC', 'sans-serif';
+    --font-subtitulos:'BlairITCMedium', 'san-serif';
+    --font-parrafos:'FuturaBook','san-serif';
+    --font-medioparrafo:'Futura','san-serif';
+}
+
+.bg-form{
+    background-color: rgba(105, 125, 110, 0.8);
+}
+.box-service{
+    border-radius: 5px;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+.mt-icon{
+    margin-top: -70px;
+}
+.background-hero{
+    background-size: 105%;
+}
+
+@font-face {
+  font-family: 'BlairITC';
+  src: url('../../public/fonts/BlairITCBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BlairITCMedium';
+  src: url('../../public/fonts/BlairITCMedium.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura';
+  src: url('../../public/fonts/Futura.ttc') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FuturaBook';
+  src: url('../../public/fonts/FuturaBook.ttf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}

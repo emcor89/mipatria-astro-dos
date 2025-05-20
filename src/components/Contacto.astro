@@ -1,0 +1,71 @@
+---
+import './src/styles/global.css'
+---
+<!-- contacto -->
+<section id="contacto" class="bg-gradient-to-b from-[#738A79] to-[#3b463e] py-20 px-6 md:px-20">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+    
+    <!-- Información de contacto -->
+    <div class="text-[#fef1db]">
+      <h4 class="font-subtitulos text-secundario-light tracking-wide mb-2">Contactanos</h4>
+      <h2 class="font-subtitulos text-secundario text-4xl font-semibold mb-6">Déjanos guiarte</h2>
+      
+      <ul class="space-y-2 mb-8">
+        <li><strong>Teléfono:</strong> 099878767</li>
+        <li><strong>Instagram:</strong> @Mipatriaec</li>
+        <li><strong>Dirección:</strong> Alborada Décima Etapa</li>
+        <li><strong>Correo:</strong> MipatriaInfo@mipatriaec.com</li>
+      </ul>
+
+      <div class="grid grid-cols-2 gap-4 font-medioparrafo">
+        <img src="../../public/img/fotodos.svg" alt="Oficina" class="rounded-xl w-full max-h-[197px] object-cover" />
+        <img src="../../public/img/fotomapa.svg" alt="Mapa" class="rounded-xl w-full max-h-[197px] object-cover" />
+      </div>
+    </div>
+
+    <!-- Formulario -->
+    <div class="bg-[#506350] bg-opacity-60 backdrop-blur p-8 rounded-2xl shadow-md text-black w-full max-w-lg mx-auto">
+      <h3 class="font-subtitulos text-secundario text-xl font-bold mb-2">Cuéntanos tu caso</h3>
+      <p class="font-parrafos mb-6 text-sm text-secundario-light">Nos comunicaremos en el menor tiempo posible</p>
+
+      <form class="space-y-4">
+        <div class="flex gap-4">
+          <input
+            type="text"
+            placeholder="Nombre"
+            class="w-full p-3 rounded-xl bg-white placeholder-gray-400 outline-none"
+          />
+          <input
+            type="text"
+            placeholder="Número"
+            class="w-full p-3 rounded-xl bg-white placeholder-gray-400 outline-none"
+          />
+        </div>
+
+        <input
+          type="email"
+          placeholder="Correo"
+          class="w-full p-3 rounded-xl bg-white placeholder-gray-400 outline-none"
+        />
+
+        <textarea
+          placeholder="Mensaje"
+          rows="4"
+          class="w-full p-3 rounded-xl bg-white placeholder-gray-400 outline-none resize-none"
+        ></textarea>
+
+        <div class="flex justify-between items-center gap-4">
+          <span class="bg-secundario text-primario text-center px-6 py-3 rounded-xl text-sm w-full">
+            0998576787
+          </span>
+          <button
+            type="submit"
+            class="bg-primario text-white px-8 py-3 rounded-xl w-full hover:bg-primario-light"
+          >
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
