@@ -29,32 +29,54 @@
       <h3 class="font-subtitulos text-secundario text-xl font-bold mb-2">Cuéntanos tu caso</h3>
       <p class="font-parrafos mb-6 text-sm text-secundario-light">Nos comunicaremos en el menor tiempo posible</p>
 
-      <form class="space-y-4">
+      <form
+        action="https://formsubmit.co/emcor89@gmail.com"
+        method="POST"
+        class="space-y-4"
+      >
+        <!-- CAMPOS -->
         <div class="flex gap-4">
           <input
             type="text"
+            name="Nombre"
             placeholder="Nombre"
+            required
             class="w-full p-3 rounded-xl bg-white placeholder-gray-400 outline-none"
           />
           <input
             type="text"
+            name="Número"
             placeholder="Número"
+            required
             class="w-full p-3 rounded-xl bg-white placeholder-gray-400 outline-none"
           />
         </div>
 
         <input
           type="email"
+          name="Correo"
           placeholder="Correo"
+          required
           class="w-full p-3 rounded-xl bg-white placeholder-gray-400 outline-none"
         />
 
         <textarea
+          name="Mensaje"
           placeholder="Mensaje"
           rows="4"
+          required
           class="w-full p-3 rounded-xl bg-white placeholder-gray-400 outline-none resize-none"
         ></textarea>
 
+        <!-- OCULTOS -->
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="http://localhost:4321/?success=true#contacto"
+        />
+
+        <!-- BOTONES -->
         <div class="flex justify-between items-center gap-4">
           <span class="bg-secundario text-primario text-center px-6 py-3 rounded-xl text-sm w-full">
             0968565505
@@ -70,3 +92,30 @@
     </div>
   </div>
 </section>
+
+<!-- Toast de agradecimiento -->
+<div
+  id="toast"
+  class="fixed bottom-4 right-4 bg-green-600 text-white py-2 px-4 rounded shadow-md opacity-0 transition-opacity duration-300 z-50"
+>
+  ¡Gracias por contactarnos!
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const isSuccess = urlParams.get("success") === "true";
+
+    const toast = document.getElementById("toast");
+    if (isSuccess && toast) {
+      toast.classList.add("opacity-100");
+
+      setTimeout(() => {
+        toast.classList.remove("opacity-100");
+      }, 3000);
+
+      // Limpia la URL
+      window.history.replaceState(null, "", window.location.pathname);
+    }
+  });
+</script>
