@@ -12,6 +12,17 @@
     --font-medioparrafo:'Futura','sans-serif';
 }
 
+.font-dancing {
+  font-family: 'Dancing Script', cursive;
+}
+.font-alex {
+  font-family: 'Alex Brush', cursive;
+}
+.font-parisienne {
+  font-family: 'Parisienne', cursive;
+}
+
+
 .bg-form{
     background-color: rgba(105, 125, 110, 0.8);
 }
@@ -68,6 +79,6 @@
 }
 
 .text-stroke {
-  -webkit-text-stroke: 0.5px black;
-  text-stroke: 0.5px black; /* para navegadores que lo soporten */
+  -webkit-text-stroke: 0.5px whitesmoke;
+  text-stroke: 0.5px whitesmoke; /* para navegadores que lo soporten */
 }
